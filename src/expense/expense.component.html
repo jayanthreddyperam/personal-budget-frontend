@@ -1,0 +1,50 @@
+<div class="expense-container">
+    <h1>{{ heading }}</h1>
+    <div style="display: flex;flex-direction: row;gap: 24px; margin-bottom: 12px;">
+        <button (click)="onDashBoard()">Go Back</button>
+        <button (click)="onLogout()">Log Out</button>
+    </div>
+  
+    <div class="controls">
+    <div class="flex-class">
+      <label for="month">Select Month:</label>
+      <select id="month" [(ngModel)]="selectedMonth">
+        <option *ngFor="let month of months" [value]="month.value">{{ month.label }}</option>
+      </select>
+    </div>
+    <div class="flex-class">
+      <label for="year">Select Year:</label>
+      <select id="year" [(ngModel)]="selectedYear">
+        <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+      </select>
+    </div>
+    </div>
+  
+    <div class="input-container">
+    <div class="flex-class">
+      <label for="category">Category:</label>
+      <input id="category" [(ngModel)]="category" placeholder="Enter category" />
+    </div>
+    <div class="flex-class">
+      <label for="amount">Amount:</label>
+      <input id="amount" [(ngModel)]="amount" type="number" placeholder="Enter amount" />
+    </div>
+    </div>
+  
+    <div class="button-container">
+      <button (click)="addCategory()">Add Category</button>
+      <button (click)="saveExpense()">Save Expense</button>
+    </div>
+  
+    <div class="expense-list">
+      <h2>Expense List</h2>
+      <ul>
+        <li *ngFor="let expense of expenses">{{ expense.category }} - ${{ expense.amount }}</li>
+      </ul>
+    </div>
+    <div style="display: flex;justify-content: center; align-items: center;" >
+        <div style="color: green;font-size: 16px;" *ngIf="successmessage">{{successmessage}}</div>
+        <div style="color: red;font-size: 16px;" *ngIf="errormessage">{{errormessage}}</div>
+    </div>
+  </div>
+  
