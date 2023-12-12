@@ -1,23 +1,23 @@
 <div class="container">
-  <div class="center-container">
-      <h1>Create an Account</h1>
+    <div class="center-container">
+      <h1>Signup</h1>
       <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" id="username" formControlName="username" required>
-          </div>
-          <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" formControlName="email" required>
-          </div>
-          <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" formControlName="password" required>
-          </div>
-          <button type="submit">Create Account</button>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" formControlName="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" formControlName="password" required>
+        </div>
+        <button type="submit">Signup</button>
       </form>
-      <div class="login-text-error" *ngIf="message">{{message}}</div>
-      <div class="login-text" *ngIf="showLoginLink">User Signed Up Successfully. Click <a (click)="onLogin()"
-              class="login-link">here</a> to Log In.</div>
+      <div class="loginTexterror" *ngIf="message">{{message}}</div>
+      <div class="loginText" *ngIf="showLoginLink">User Signed Up Successfully click here to <a (click)="onLogin()" class="loginLink">Login</a></div>
+    </div>
   </div>
-</div>
+  

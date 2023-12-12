@@ -1,87 +1,76 @@
 .dashboard-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #5cf4d6; /* Light gray background */
-  border: 1px solid #ddd; /* Add border */
-  border-radius: 10px; /* Add border-radius */
-}
-
-h1 {
-  color: #333;
-  text-align: center; /* Center align the heading */
-  margin-bottom: 20px;
-}
-
-.controls {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Allow controls to wrap on smaller screens */
-}
-
-label {
-  margin-right: 10px;
-  font-size: 16px;
-}
-
-select, button {
-  padding: 12px; /* Increase padding */
-  font-size: 16px;
-  margin: 0 10px; /* Add some margin to the right and left of controls */
-}
-
-/* Updated styling for dropdowns */
-select {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 150px; /* Adjust width as needed */
-}
-
-/* Updated styling for buttons */
-button {
-  background-color: #007bff; /* Blue color */
-  color: white;
-  padding: 12px 24px; /* Increase padding */
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-.chart {
-  min-width: 40%;
-  width: auto;
-  padding: 24px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
-  border-radius: 10px; /* Adjust border-radius */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Adjust gap between elements */
-  background-color: #fff; /* White background */
-  margin-bottom: 20px;
-}
-
-.charts {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 20px; /* Adjust gap between charts */
-}
-
-.charts.hidden {
-  display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Updated styling for dropdowns */
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px; /* Add some margin to the right */
+    cursor: pointer;
+  }
+  
+  /* Updated styling for buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add some margin between buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .chart{
+    min-width: 40%;
+    width: auto;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap:24px
+  }
+  .charts{
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .charts.hidden{
+    display: none;
 }

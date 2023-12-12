@@ -24,8 +24,9 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
+      // Implement your login logic here
       console.log('Form submitted:', this.loginForm.value);
-      this.http.post("https://dolphin-app-cgbrn.ondigitalocean.app/credentials/login",this.loginForm.value).subscribe((data:any)=>{
+      this.http.post("http://localhost:8080/credentials/login",this.loginForm.value).subscribe((data:any)=>{
     console.log(data);
     if(data.mssg === "User Found!!"){
       sessionStorage.setItem('token',data.jwtToken);

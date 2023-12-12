@@ -32,7 +32,7 @@ export class JWTrefreshService {
         let reqBody = {
           userId:sessionStorage.getItem('userId')
         };
-        this.http.post("https://dolphin-app-cgbrn.ondigitalocean.app/credentials/jwt",reqBody).subscribe((data:any)=>{
+        this.http.post("http://localhost:8080/credentials/jwt",reqBody).subscribe((data:any)=>{
           sessionStorage.setItem('token',data.jwtToken);
           this.setToken(data.token);
         })

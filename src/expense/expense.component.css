@@ -1,83 +1,74 @@
 .expense-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #b3f976; /* Light gray background */
-  border: 1px solid #ddd; /* Add border */
-  border-radius: 10px; /* Add border-radius */
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center; /* Center align the heading */
-}
-
-.controls {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-label {
-  margin-right: 10px;
-  font-size: 16px; /* Increase font size */
-}
-
-select, input {
-  padding: 12px; /* Increase padding */
-  font-size: 16px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 220px; /* Adjust width as needed */
-}
-
-.button-container {
-  display: flex;
-  gap: 15px;
-  justify-content: center; /* Center align the buttons */
-}
-
-button {
-  background-color: #007bff; /* Blue color */
-  color: white;
-  padding: 12px 24px; /* Increase padding */
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-.expense-list {
-  margin-top: 20px;
-  width: 100%; /* Make the list full width */
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  padding: 15px; /* Increase padding */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff; /* White background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-}
-
-.flex-class{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select, input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .expense-list {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .flex-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

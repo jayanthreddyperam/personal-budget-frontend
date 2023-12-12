@@ -47,10 +47,10 @@ export class DashboardComponent {
 
   ngOnInit(): void {
     const headers = new HttpHeaders().set('Authorization', `${sessionStorage.getItem('token')}`);
-    this.http.get(`https://dolphin-app-cgbrn.ondigitalocean.app/personBudget/getBudget/${sessionStorage.getItem("userId")}`, {
+    this.http.get(`http://localhost:8080/personBudget/getBudget/${sessionStorage.getItem("userId")}`, {
       headers: headers,}).subscribe((data:any)=>{
       this.budgetData = data.data;
-      this.http.get(`https://dolphin-app-cgbrn.ondigitalocean.app/personExpense/getExpense/${sessionStorage.getItem("userId")}`, {
+      this.http.get(`http://localhost:8080/personExpense/getExpense/${sessionStorage.getItem("userId")}`, {
         headers: headers,}).subscribe((data:any)=>{
       this.expenseData = data.data;
       if(this.budgetData!==null && this.expenseData!==null){

@@ -65,7 +65,7 @@ export class BudgetComponent {
       }
       console.log(reqBody);
       const headers = new HttpHeaders().set('Authorization', `${sessionStorage.getItem('token')}`);
-      this.http.post("https://dolphin-app-cgbrn.ondigitalocean.app/personBudget/addBudget",reqBody,{
+      this.http.post("http://localhost:8080/personBudget/addBudget",reqBody,{
         headers: headers,}).subscribe((data:any)=>{
         this.successmessage = data.mssg
       },(error: any)=>{
